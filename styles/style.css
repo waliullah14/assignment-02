@@ -23,6 +23,27 @@ body {
   display: flex;
 }
 
+.primary-btn {
+  font-size: 1.25rem;
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  padding: 12.5px 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:hover,
+.transparent-btn:hover {
+  transform: translateX(3px) translateY(3px);
+}
+
 nav {
   background-color: #1a0b2e;
   justify-content: space-around;
@@ -55,50 +76,116 @@ nav ul {
 nav li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
-.primary-btn {
-    background: linear-gradient(
-    45deg,
-    rgba(247, 233, 63, 1),
-    rgba(251, 9, 180, 1),
-    rgba(145, 0, 248, 1)
-  );
-  padding: 12.5px 16px;
-  color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  font-weight: 600;
+.menu-icon {
+  display: none;
 }
 
-.menu-icon {
-    display: none;
+.hero {
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.center-img {
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  max-height: 350px;
+}
+
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.hero p {
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.hero-btn {
+  margin-top: 24px;
+}
+
+.transparent-btn {
+  font-size: 1.25rem;
+  border: 1px solid #00ff88;
+  border-radius: 20px;
+  color: #00ff88;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 12px 20px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        width: 100%;
-    }
+  body {
+    width: 100%;
+  }
 
-    nav {
-        justify-content: space-between;
-        padding: 20px;
-    }
+  nav {
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-    nav h2 {
-        font-size: 1.25rem;
-    }
+  nav h2 {
+    font-size: 1.25rem;
+  }
 
-    nav ul li{
-        display: none;
-    }
+  nav ul li {
+    display: none;
+  }
 
-    nav .primary-btn {
-        display: none;
-    }
+  nav .primary-btn {
+    display: none;
+  }
 
-    nav .menu-icon {
-        display: inline;
-    }
+  nav .menu-icon {
+    display: inline;
+  }
+
+  .hero {
+    padding:40px 20px 24px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-top: 16px;
+  }
+
+  .center-img {
+    position: relative;
+  }
+
+  .circle img{
+    width: 60%;
+  }
+
+  .center-icon img{
+    width: 50%
+  }
+
+  .primary-btn, .transparent-btn {
+    font-size: 1rem;
+  }
 }
