@@ -111,6 +111,17 @@ nav li a {
   transform: translate(-50%, -50%);
 }
 
+.new {
+    background-color: #00FF88;
+    font-weight: 600;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    border-radius: 20px;
+}
+
 .hero h1 {
   font-size: 5rem;
   font-weight: 800;
@@ -137,6 +148,44 @@ nav li a {
   padding: 12px 20px;
   margin-left: 8px;
 }
+
+.about {
+    background-color: #1A0B2E;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.about p {
+    max-width: 1200px;
+    margin: 16px auto;
+    color: #ffffff;
+    line-height: 32px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    max-width: 1200px;
+    margin: 40px auto 0px;
+    border-top: 1.5px solid #ffffff3c;
+    padding-top: 40px;
+}
+
+.about-card h3 {
+    color: #00FF88;
+    font-size: 3rem;
+}
+
+
 
 @media screen and (max-width: 576px) {
   body {
@@ -185,7 +234,45 @@ nav li a {
     width: 50%
   }
 
+  .new {
+    background-color: #00FF88;
+    font-weight: 600;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    border-radius: 20px;
+}
+
   .primary-btn, .transparent-btn {
     font-size: 1rem;
   }
+
+  .about {
+    background-color: #1A0B2E;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    width: 90%;
+    line-height: 20px;
+}
+
+.about-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    border-top: 1.5px solid #ffffff3c;
+    padding-top: 40px;
+}
+
+.about-card h3 {
+    font-size: 2.5rem;
+}
 }
