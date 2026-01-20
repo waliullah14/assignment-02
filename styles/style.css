@@ -298,6 +298,10 @@ nav li a {
   padding-bottom: 120px;
 }
 
+.host h2 {
+  padding-bottom: 40px;
+}
+
 .host-container {
   width: 75%;
   max-width: 1200px;
@@ -306,7 +310,6 @@ nav li a {
   gap: 24px;
   background-color: #351165;
   padding: 48px 40px;
-  margin-top: 40px;
   border-radius: 40px;
   align-items: center;
 }
@@ -496,11 +499,16 @@ nav li a {
   padding-bottom: 40px;
 }
 
+.host h2 {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  font-size: 2rem;
+}
+
 .host-container {
   width: 90%;
   flex-direction: column;
   padding: 24px;
-  margin-top: 24px;
   border-radius: 24px;
   text-align: center;
   align-items: center;
