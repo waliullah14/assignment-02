@@ -357,6 +357,7 @@ footer {
   justify-content: center;
   background-image: url(../assets/footer-bg.png);
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   padding: 120px 0px;
   text-align: center;
@@ -580,6 +581,11 @@ footer small {
 
 .host-icon .icon img {
   display: block;
+}
+
+footer {
+  background-size: 100% 100%;
+  padding: 40px 0px;
 }
 
 .footer-container {
