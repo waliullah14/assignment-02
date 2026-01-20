@@ -248,7 +248,7 @@ nav li a {
     background-color: #1a0b2e;
 }
 
-.episode h2 {
+.episode h2, .host h2 {
     text-align: center;
     padding-top: 120px;
     color: #ffffff;
@@ -292,6 +292,54 @@ nav li a {
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0px 0px;
+}
+
+.host {
+  padding-bottom: 120px;
+}
+
+.host-container {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  background-color: #351165;
+  padding: 48px 40px;
+  margin-top: 40px;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.host-container h3 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.host-container p {
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.host-icon {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.host-icon .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #533C72;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.host-icon .icon img {
+  display: block;
 }
 
 @media screen and (max-width: 576px) {
@@ -437,10 +485,44 @@ nav li a {
     width: 100%;
     padding: 45px 40px;
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 24px;
 }
 
 .ep h3 {
     font-size: 1.25rem;
+}
+
+.host {
+  padding-bottom: 40px;
+}
+
+.host-container {
+  width: 90%;
+  flex-direction: column;
+  padding: 24px;
+  margin-top: 24px;
+  border-radius: 24px;
+  text-align: center;
+  align-items: center;
+}
+
+.host-container h3 {
+  font-size: 1.5rem;
+}
+
+.host-icon {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.host-icon .icon {
+  justify-content: center;
+}
+
+.host-icon .icon img {
+  display: block;
 }
 
 }
